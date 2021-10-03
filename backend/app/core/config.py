@@ -20,7 +20,8 @@ class Settings(BaseSettings):
     FIRST_SUPERUSER: EmailStr  # admin@example.com
     FIRST_SUPERUSER_PASSWORD: str 
     USERS_OPEN_REGISTRATION: bool # True
-
+    EMAILS_ENABLED: bool = False
+    
     # BACKEND_CORS_ORIGINS is a JSON-formatted list of origins
     # e.g: '["http://localhost", "http://localhost:4200", "http://localhost:3000", \
     # "http://localhost:8080", "http://local.dockertoolbox.tiangolo.com"]'
